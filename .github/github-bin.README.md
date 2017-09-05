@@ -11,7 +11,7 @@
 
 # Description
 
-This is an initial structure for a composite project that contains code from multiple other open source projects with varying README, LICENSE, CONTRIBUTING, and CODE_OF_CONDUCT files.
+An evolving collection of github utilities ...
 
 ## Table of Contents
 
@@ -24,39 +24,19 @@ This is an initial structure for a composite project that contains code from mul
 
 ## Installation
 
-Download to the project directory, add, and commit.  i.e.:
+Clone from github.com:
 
 ```sh
-export Project_Name=my-project
-mkdir $Project_Name && cd $Project_Name
-curl -LOk https://github.com/josephtingiris/github-bin/archive/master.zip && unzip -j master.zip github-bin-master/.github/* -d .github/ && rm -f master.zip
-sh .github/github-bin $Project_Name
+git clone git@github.com:josephtingiris/github-bin
 ```
 
 ## Usage
 
-1. Create the following files for the project:
+1. Add github-bin/bin to the PATH
 
-* *project*.README.md
-* *project*.TYPE.LICENSE.md
-* *project*.CODE_OF_CONDUCT.md
-* *project*.CONTRIBUTING.md
-
-2. Update the *project* files with links and/or content about the *project*. e.g.:
-
-* Name
-* Description
-* Installation instructions
-* Usage instructions
-* Support instructions
-* Contributing instructions
-
-3. Update the following files with links and/or content to the *project* files.
-
-* README.md
-* LICENSE.md
-* CODE_OF_CONDUCT.md
-* CONTRIBUTING.md
+```sh
+export PATH=$PATH:github-bin/bin
+```
 
 ## Support
 
